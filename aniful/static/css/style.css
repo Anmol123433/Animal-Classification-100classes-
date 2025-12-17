@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+/* ---------- CARD ---------- */
+.card {
+    background: #fff;
+    width: 420px;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    text-align: center;
+}
+
+/* ---------- HEADINGS ---------- */
+.card h1, .card h2 {
+    margin-bottom: 15px;
+    color: #2a5298;
+}
+
+.card p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* ---------- FILE INPUT ---------- */
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px dashed #bbb;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+/* ---------- BUTTON ---------- */
+button {
+    background: linear-gradient(135deg, #2a5298, #1e3c72);
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* ---------- IMAGE GRID ---------- */
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+/* ---------- LINK ---------- */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #2a5298;
+    font-weight: bold;
+}

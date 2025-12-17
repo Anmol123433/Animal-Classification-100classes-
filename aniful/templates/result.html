@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="card" style="width: 720px;">
+    <h2>Prediction Result</h2>
+
+    <p><b>Animal:</b> {{ label }}</p>
+    <p><b>Confidence:</b> {{ confidence }}%</p>
+
+    <div class="image-grid">
+        <div>
+            <p><b>Original</b></p>
+            <img src="{{ url_for('static', filename='uploads/' + original) }}">
+        </div>
+
+        <div>
+            <p><b>Grad-CAM</b></p>
+            <img src="{{ url_for('static', filename='outputs/' + gradcam) }}">
+        </div>
+    </div>
+
+    <a href="/">🔁 Try Another Image</a>
+</div>
+
+</body>
+</html>
